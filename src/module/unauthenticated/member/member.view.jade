@@ -1,0 +1,50 @@
+ion-view(title="PicStreet")#picstreet
+		
+	.menu
+		.logo
+			img(src="img/svg/logo.svg")
+
+		.links
+			.member 
+				button.selected Member
+			.photographer 
+				a(href="mailto:guillaume@picstreet.io?subject=[NEW PHOTOGRAPHER]&body=Hello Guillaume, ")
+					button Photographer
+
+	.main
+		.form
+			
+			.form-block-container
+				.form-badges
+
+					.appstore
+						img(src="img/svg/badge.appstore.svg")
+					.playstore
+						img(src="img/svg/badge.playstore.svg")
+
+				.form-block-center
+					.form-block 
+						.number {{ photographersNumber }}
+						.legend 
+							.picto
+								img(src="img/svg/photographer-location.svg")
+								.sonar-wave
+							.text {{ photographersNumber  > 1 ? 'Photographers' : 'Photographer' }} available in realtime
+
+			.form-location-bar
+				img(src="img/svg/location-bar.svg")
+			
+			.form-location
+				img(src="img/svg/location.svg")
+
+		.phone
+			img(src="img/svg/iphone.svg")
+			.content#map
+
+		.steps
+			.step(ng-repeat="step in steps")
+				.number
+					.number-circle {{ step.number }}
+				.description {{ step.description }}
+	
+	.footer PicStreet® 2016 

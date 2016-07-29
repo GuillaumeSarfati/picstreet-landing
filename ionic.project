@@ -1,0 +1,17 @@
+{
+  "name": "picstreet",
+  "app_id": "a4df7a9a",
+  "watchPatterns": [
+    "www/**/*"
+  ],
+  "gulpStartupTasks": [
+    "watch"
+  ],
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ]
+}

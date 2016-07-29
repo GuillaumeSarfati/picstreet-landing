@@ -1,0 +1,154 @@
+@font-face {
+	font-family: "picstreet";
+	src: url('picstreet.eot');
+	src: url('picstreet.eot?#iefix') format('eot'),
+		url('picstreet.woff2') format('woff2'),
+		url('picstreet.woff') format('woff'),
+		url('picstreet.ttf') format('truetype'),
+		url('picstreet.svg#picstreet') format('svg');
+}
+
+.custom-icon:before {
+	font-family: "picstreet";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.custom-icon-americanexpress:before {
+	content: "\E001";
+}
+
+.custom-icon-badge.appstore:before {
+	content: "\E002";
+}
+
+.custom-icon-badge.playstore:before {
+	content: "\E003";
+}
+
+.custom-icon-bottle:before {
+	content: "\E004";
+}
+
+.custom-icon-business:before {
+	content: "\E005";
+}
+
+.custom-icon-car:before {
+	content: "\E006";
+}
+
+.custom-icon-cb:before {
+	content: "\E007";
+}
+
+.custom-icon-cut:before {
+	content: "\E008";
+}
+
+.custom-icon-dinersclub:before {
+	content: "\E009";
+}
+
+.custom-icon-discover:before {
+	content: "\E00A";
+}
+
+.custom-icon-faste:before {
+	content: "\E00B";
+}
+
+.custom-icon-flight:before {
+	content: "\E00C";
+}
+
+.custom-icon-home:before {
+	content: "\E00D";
+}
+
+.custom-icon-iphone:before {
+	content: "\E00E";
+}
+
+.custom-icon-jcb:before {
+	content: "\E00F";
+}
+
+.custom-icon-location-bar:before {
+	content: "\E010";
+}
+
+.custom-icon-location:before {
+	content: "\E011";
+}
+
+.custom-icon-logo:before {
+	content: "\E012";
+}
+
+.custom-icon-marker:before {
+	content: "\E013";
+}
+
+.custom-icon-mastercard:before {
+	content: "\E014";
+}
+
+.custom-icon-money:before {
+	content: "\E015";
+}
+
+.custom-icon-photographe-bar:before {
+	content: "\E016";
+}
+
+.custom-icon-photographer-location:before {
+	content: "\E017";
+}
+
+.custom-icon-photographer:before {
+	content: "\E018";
+}
+
+.custom-icon-request-car:before {
+	content: "\E019";
+}
+
+.custom-icon-request-experience:before {
+	content: "\E01A";
+}
+
+.custom-icon-request-flight:before {
+	content: "\E01B";
+}
+
+.custom-icon-request-general:before {
+	content: "\E01C";
+}
+
+.custom-icon-request-nightlife:before {
+	content: "\E01D";
+}
+
+.custom-icon-request-service:before {
+	content: "\E01E";
+}
+
+.custom-icon-request-stay:before {
+	content: "\E01F";
+}
+
+.custom-icon-request-yatch:before {
+	content: "\E020";
+}
+
+.custom-icon-visa:before {
+	content: "\E021";
+}
