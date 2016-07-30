@@ -29,11 +29,13 @@ angular.module 'picstreet', [
 	'ionic-native-transitions'
 
 	'lbServices'
+	'ngPicstreet'
 
 	'ngIOS9UIWebViewPatch'
 	'cwill747.phonenumber'
 
 	'picstreet.translate'
+	'picstreet.directives'
 
 	'picstreet.unauthenticated'
 

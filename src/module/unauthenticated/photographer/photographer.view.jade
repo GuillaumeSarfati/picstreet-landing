@@ -5,71 +5,69 @@ ion-view(title="PicStreet")#photographer
 			.link 
 				.link-title Photographer
 			.link
-				.link-title(
-					ui-sref="member"
-				) Member
+				.link-title Member
 
 		.main
-			.punchline Join the Picstreet community
+			.punchline DEVENEZ PHOTOGRAPHE PICSTREET
 
-			.description Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. 
+			.description Vous avez des compétences en photographie ? C’est le moment ou jamais de devenir un Photographe PicStreet ! Lancez-vous !
 
-			.stats
-				.stat
-					.value 20%
-					.name Stat
-				.stat
-					.value 20%
-					.name Stat
-				.stat
-					.value 20%
-					.name Stat
-				.stat
-					.value 20%
-					.name Stat
-				.stat
-					.value 20%
-					.name Stat
+			//- .stats
+			//- 	.stat
+			//- 		.value 20%
+			//- 		.name Stat
+			//- 	.stat
+			//- 		.value 20%
+			//- 		.name Stat
+			//- 	.stat
+			//- 		.value 20%
+			//- 		.name Stat
+			//- 	.stat
+			//- 		.value 20%
+			//- 		.name Stat
+			//- 	.stat
+			//- 		.value 20%
+			//- 		.name Stat
 
 		.phone
 			img(src="img/phone.png")
 
 	.paragraphe.left
 		
-		.subtitle Completez vos revenus
+		.subtitle Vous êtes indépendant
 		
-		.title  Completely synergize resource taxing relationships via premier niche markets.
+		.title Vous shootez quand vous le souhaitez, sans aucune contrainte
 		
-		.description  Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains.
+		.description de façon libre et flexible. Vous construisez votre propre emploi du temps. C’est vous qui voyez ! 
 		
 		.action
-			button Learn More
+			button(ng-click="getPhotographerForm()") Devenir Photographe
 
 	.step
 		.box-text
 			.subtitle Etape 1
 			.title Rejoignez les meilleurs spots de Paris.
-		.box-image.map
-
-	.step.step-reverse
-		.box-text
-			.subtitle Etape 2
-			.title Immortalisez leurs plus beaux moments.
-		.box-image.without-image
+		.box-image#map
 
 	.step
 		.box-text
+			.subtitle Etape 2
+			.title Immortalisez leurs plus beaux moments.
+		.box-text
 			.subtitle Etape 3
 			.title Gagnez de l'argent.
-		.box-image.without-image
+
+	//- .step.step-reverse
+		//- .box-image.without-image
+		//- .box-image.without-image
 
 	.paragraphe.center
 		
 		.subtitle Completez vos revenus
 		
-		.title  Completely synergize resource taxing relationships via premier niche markets.
+		.title  Completez vos revenus ou vivez de votre passion
 		
-		.description  Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains.
+		.description  Notre équipe met à disposition tous les outils nécessaires pour devenir un Photographe PicStreet : une application fonctionnelle de mise en relation avec vos futurs clients ainsi qu’un logiciel performant pour envoyer directement vos photos ! Nous fournissons également un guide, des conseils et une formation pour vous familiariser aux exigences de PicStreet ! Notre équipe est là pour répondre à la moindre de vos questions !
 	
 	.paragraphe.center.light
 
@@ -79,7 +77,7 @@ ion-view(title="PicStreet")#photographer
 			label.toggle.toggle-balanced
 				input(
 					type="checkbox"
-					ng-model="become"
+					ng-click="getPhotographerForm()"
 				)
 				.track
 					.handle

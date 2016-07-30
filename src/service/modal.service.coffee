@@ -2,47 +2,17 @@ angular.module 'picstreet'
 
 .service '$pxModal', ($rootScope, $ionicModal, $controller) ->
 	
-	$bbModal = 
+	$pxModal = 
 
-		getPaymentMethods: (bindScope={}, callback=->) ->
+		getPhotographerForm: (bindScope={}, callback=->) ->
 
-			$bbModal.getModal 
+			$pxModal.getModal 
 
-				name: 'PaymentMethods'
-				templateUrl: 'payment.view.html'
-				controller: 'paymentCtrl'
+				name: 'PhotographerForm'
+				templateUrl: 'photographer-form.view.html'
 				bindScope: bindScope
 
-			, (modal, modalScope) ->
-				
-				modalScope.isModal = true
-				
-				modalScope.selectCreditCard = (card) ->
-					$rootScope.$broadcast '$card:update', card
-					modalScope.modal.hide()
-
-				callback modal, modalScope
-
-		getMyPictures: (bindScope={}, callback=->) ->
-
-			$bbModal.getModal 
-
-				name: 'MyPictures'
-				templateUrl: 'pictures.view.html'
-				controller: 'picturesCtrl'
-				bindScope: bindScope
-
-			, (modal, modalScope) ->
-				
-				modalScope.isModal = true
-				
-				modalScope.selectCreditCard = (card) ->
-					$rootScope.$broadcast '$card:update', card
-					modalScope.modal.hide()
-
-				callback modal, modalScope
-
-	
+			, callback
 
 		getModal: (opts, callback=->) ->
 
@@ -54,11 +24,6 @@ angular.module 'picstreet'
 			if Object.keys(opts.bindScope).length
 				for propertyName, propertyValue of opts.bindScope
 					modalScope[propertyName] = propertyValue
-					# if modalScope[propertyName] is undefined
-					# 	modalScope[propertyName] = propertyValue
-					# else
-					# 	console.error "#{propertyName} already exist in modalScope : ", modalScope[propertyName]
-
 
 			if opts.controller
 				$controller opts.controller, 
